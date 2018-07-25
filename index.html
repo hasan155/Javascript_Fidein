@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="js/jquery.js"></script>	
+		<title>I love my Bangladesh</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<section class="maincontent">
+			<header class="header">
+				<h1><script>document.write("Hi, I am Hasan Mahmud");</script></h1>
+			</header>
+			<content class="content">
+			<div>
+				
+				<button onclick="fedOut()">start</button>
+			 </div>	
+			 <div>
+				<img src="img/flower.jpg" id ="images"/>
+			 </div>		
+			<script type="text/javascript">
+			
+			
+				var element = document.getElementById("images");
+				
+				var duration = 1000;
+				var hidtime  = 1000;
+				var showtime = 1000;
+				
+				function setOpacity(value){
+					element.style.opacity = value;
+				}
+				
+				function fedOut(){
+					for(i=0; i<=1; i+=0.01){
+						setTimeout("setOpacity("+(1-i)+")", i*duration);
+					}
+						setTimeout("fedIn()", (duration+hidtime));					
+				}	
+				
+				function fedIn(){
+					for(i=0; i<=1; i+=0.01){
+						setTimeout("setOpacity("+i+")", i*duration);
+					}
+						setTimeout("fedOut()", (duration+showtime));						
+				}		
+			
+			</script>
+			</content>
+			<footer class="footer">
+				<h1><script>document.write("I live in Bangladesh ");</script></h1>
+			</footer>		
+		</section>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
